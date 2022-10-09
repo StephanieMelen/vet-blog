@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Lora', serif;
+	background: #E5E5E5;
+}
+	
+.container{
+	width: 1300px;
+	margin: auto;
+}
+
+li{
+	list-style: none;
+}
+
+header{
+	background: rgba(0,0,0,0.2);	
+	padding: 29px 0px;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+header .logo img{
+	float: left;
+	height: 22px;
+}
+
+header nav{
+	float: right;
+}
+
+header nav li{
+	margin-right: 25px;
+	display: inline-block;
+}
+
+header nav a{
+	color: #E5E5E5;
+	font-family: 'Roboto';
+	font-weight: 700;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+header nav .active a{
+	color: #D4A373;
+}
+
+header nav a:hover{
+	color: #D4A373;
+}
+
+
+.tag{
+	background: rgba(255,255,255,0.15);
+	border-radius: 8px;
+	padding: 5px 10px;
+	color: #ffffff;
+	font-family: 'Roboto';
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 12px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.hero .tag{
+	margin-bottom: 15px;
+    display: inline-block;
+}
+
+.hero h2{
+	margin-bottom: 15px;
+}
+
+
+h2 {
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 46px;
+	color: rgba(255, 255, 255, 1);
+}
+
+.hero{
+	min-height: 600px;
+	background-image: url('../img/hero.jpg');
+	background-size: cover;
+	position: relative;
+}
+
+.hero-details{
+	position: absolute;
+    bottom: 100px;
+    max-width: 530px;
+}
+
+.hero .post-date{
+	margin-bottom: 15px;
+	display: block;
+}
+
+.hero .post-date, .hero p {
+	color: rgba(229, 229, 229, 1);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+.popular-topics h1 {
+	display: block; /* SELF REMINDER:  not needed as div contains content, otherwise if it were a text box it would display*/
+	margin-top: 150px;
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 46px;
+	color: rgba(73, 80, 87, 1);
+
+}
+
+.popular-topics-categ li {
+		display: inline-block;
+		margin-left: 20px;
+
+}
+
+.popular-topics-categ li:first-child {
+		margin-left: 0px;
+}
+
+
+.popular-topics-categ li a {
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 25px;
+		color: rgba(73, 80, 87, 1);
+		text-decoration: none;
+
+}
+
+.popular-topics-categ li.active a{ /* SELF REMINDER: li not needed as already have a class but good practice to keep so I don't forget*/
+	color: rgba(212, 163, 115, 1);
+}
+
+.popular-topics-categ li a:hover {
+	color: rgba(212, 163, 115, 1)
+	}
+
+
+.popular-topics-list li {
+		display: inline-block;
+		margin-top: 30px;
+		width: 22%;
+		overflow: hidden;
+		vertical-align: top;
+		margin-right: 47px;
+		background-color: white;
+		padding-bottom: 20px;
+		position: relative;
+}
+
+
+.popular-topics-list li:last-child {
+	margin-right: 0px;	
+}
+
+.popular-topics-list p, .popular-topics-list h2, .popular-topics-list time {
+	padding: 0px 20px;
+}
+
+.post-img {
+	border-radius: 5px 5px 0px 0px;
+	height: 320px;
+	background-size: cover;
+	display: block;
+}
+
+.post1 {
+	background-image: url(https://aldf.org/wp-content/uploads/2018/06/GettyImages-879798260-e1560171751629.jpg);
+	background-position: right;
+}
+
+.post2 {
+	background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F47%2F2022%2F01%2F13%2Fscabies-in-cats-302167138-2000.jpg&q=60);
+	background-position: center;
+}
+
+.post3 {
+	background-image: url(https://dogtime.com/assets/uploads/2020/04/supplements-senior-dogs-1.jpg);
+	background-position: center;
+}
+
+.post4 {
+	background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgj6kfbuqTd6YFKL9cJEfrMLffMOwErwMyIQ&usqp=CAU);
+	background-position: center;
+}
+
+.popular-topics-list h2 {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	color: #495057;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	}
+
+.popular-topics-list .post-date {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #6C757D;
+	margin-top: 15px;
+	display: block;
+}
+
+.popular-topics-list p {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	color: #6C757D;
+	margin-top: 15px;
+} 
+
+.popular-topics-list .tag {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+
+}
+
+
+.highlight {
+	background-image: url(https://face4pets.files.wordpress.com/2019/09/brachycephaly-study-1.jpg?w=1424&h=948);
+	background-size: cover;
+	background-position: center;
+	min-height: 600px;
+	margin-bottom: 150px;
+	margin-top: 150px;
+	position: relative;
+}
+
+.highlight-details {
+    bottom: 100px;
+    max-width: 530px;
+    position: absolute;
+}
+
+.highlight-details .tag {
+	margin-bottom: 15px;
+    display: inline-block;
+}
+
+.highlight-details h2 {
+	margin-bottom: 15px;
+}
+
+
+.highlight-details .post-date {
+	margin-bottom: 15px;
+	display: block;
+}
+
+.highlight-details .post-date, .highlight-details p {
+	color: rgba(229, 229, 229, 1);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+
+.highlight h1 {
+	font-weight: 900;
+	font-size: 50px;
+	line-height: 46px;
+	color: #E5E5E5;
+	background: rgba(255,255,255,0.15);
+	border-radius: 8px;
+	padding: 5px 10px;
+    display: inline-block;
+    margin-top: 60px;
+}
+
+footer {	
+	padding: 108px 0px;
+    width: 100%;
+  	background: rgba(52, 58, 64, 1);
+
+}
+
+.footer-content {
+	display: inline-block;
+	margin-right: 200px;
+	vertical-align: top;
+
+}
+
+.footer-content .title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 25px;
+	color: white;
+	margin-bottom: 20px;
+}
+
+.footer-content span {
+	display: block;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #E5E5E5;
+	margin-top: 20px;
+} 
+
+.footer-content a {
+	text-decoration: none;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #E5E5E5;
+	margin-top: 20px;
+}
+
+.footer-content address {
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 20px;
+	color: #E5E5E5;
+}
